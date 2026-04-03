@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 5px;
+    transition: transform 0.3s ease-in-out;
+    .card:hover {
+    transform: scale(1.05);
+    transition: color 0.3s ease-in-out;
+    h2:hover {
+    color: red;cursor: pointer; 
+} 
+    }
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.rpg-stats {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.stat-row {
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    width: 100%;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 20px;
+    border-radius: 10px;
+}
+.creative {
+    width: 80%;
+    background: orange;
+  /* Додайте ці 3 рядки: */animation: fillUp 1s ease-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+
+.logic {
+    width: 70%;
+    background: green;
+  /* Додайте ці 3 рядки: */animation: fillUp 1s ease-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+
+.strength {
+    width: 90%;
+    background: #e74c3c;
+}
+
+.magic {
+    width: 75%;
+    background: #9b59b6;
+}
+
+.luck {
+    width: 60%;
+    background: #2ecc71;
+}
+@keyframes fillUp {
+    0% { 
+    width: 0%; 
+}
+}
